@@ -1,0 +1,17 @@
+
+.ml-breadcrumb {
+    color:#999999;
+    font-size: 14px;
+    padding: 16px 0px 16px 0px;
+    & span:hover {
+        color: #666666;
+        cursor: pointer;
+    }
+    width: 85%;
+}
+
+@media only screen and (max-width: 700px){
+    .ml-breadcrumb { 
+        width: 90%;
+    }
+}

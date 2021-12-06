@@ -1,0 +1,30 @@
+$ml-back-color-body: #eeeeee;
+
+@import "./components/ml-header";
+@import "./components/ml-breadcrumb";
+@import "./components/ml-detail";
+@import "./components/ml-data-product";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: $ml-back-color-body;
+    font-family: Proxima Nova,-apple-system,Helvetica Neue,Helvetica,Roboto,Arial,sans-serif;
+}
+
+.ml-container {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $ml-back-color-body;
+    min-width: 360px;
+}
+
+.ml-body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}

@@ -1,0 +1,110 @@
+/*Variables*/
+
+$ml-shipping-img: "../../Assets/ic_shipping.png";
+$ml-detail-descript-size: 18px;
+$ml-detail-price-size: 24px;
+$ml-external-layer-padding: 16px;
+
+.ml-detail {
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 85%;
+
+    .ml-detail-external-layer {
+        display: flex;
+        flex-wrap: wrap;
+        padding: $ml-external-layer-padding $ml-external-layer-padding 0px $ml-external-layer-padding;
+        width: 100%; 
+
+        .ml-detail-row {
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+            border-bottom-color: #eeeeee;
+            color: #666666;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;    
+        }
+    
+        .ml-detail-image {
+            margin: 0px $ml-external-layer-padding $ml-external-layer-padding 0px;
+            & img{
+                border-radius: 4px;
+                height: 180px;
+                width: 180px;
+            }
+        }
+    
+        .ml-detail-prod {
+            width: 65%;
+    
+            .ml-detail-price {
+                font-size: $ml-detail-price-size;
+                margin: $ml-external-layer-padding 0px 32px 0px;
+            }
+        
+            .ml-detail-descript {
+                font-size: $ml-detail-descript-size;
+            }
+        }
+    
+        .ml-detail-location {
+            color: #999999;
+            font-size: 12px;
+            margin-top: $ml-external-layer-padding;
+        }
+    
+        .ml-shipping::after {
+            background-image: url($ml-shipping-img);
+            background-size: 15px 15px;
+            background-repeat: no-repeat;
+            content:"";
+            display: inline-block;
+            height: 15px;
+            margin-left: 8px;
+            width: 15px; 
+        }
+    }
+}
+
+@media only screen and (min-width: 700px) and (max-width: 990px){
+    .ml-detail {
+        width: 90%;
+        .ml-detail-row {
+            width: 100%;
+            padding: 5px;
+            
+            .ml-detail-prod {
+                width: 45%;    
+            }
+    
+            .ml-detail-location {
+                width: 20%;    
+                text-align: right;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 700px){
+    .ml-detail {
+        width: 90%;
+        .ml-detail-row {
+            justify-content: center;
+            width: 100%;
+            padding: 5px;
+    
+            .ml-detail-prod {
+                width: 100%;    
+                text-align: center;
+            }
+    
+            .ml-detail-location {
+                width: 100%;    
+                text-align: center;
+            }
+        }
+    }
+}

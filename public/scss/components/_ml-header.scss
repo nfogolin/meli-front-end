@@ -1,0 +1,58 @@
+/*Variables*/
+
+$ml-lupa-img: "../../Assets/ic_Search.png";
+$ml-input-height: 25px;
+$ml-padding-search: 5px;
+$ml-wid-hei-lupa: $ml-input-height + ($ml-padding-search * 2);
+$ml-padd-left-top-lupa: ($ml-wid-hei-lupa - 15px) / 2;
+$ml-margen-right-logo: 15px;
+$ml-header-padding: 10px;
+$ml-font-size-input: 18px;
+$ml-border-radius: 2px;
+$ml-place-holder-color: #eeeeee;
+$ml-yellow-color: #ffe600;
+
+.ml-header{
+    background-color: $ml-yellow-color;
+    display: flex;
+    justify-content: center;
+    padding: $ml-header-padding;
+    width: 100%;
+}
+
+.ml-input  {
+    width: 80%;
+
+    input {
+        border: none;
+        border-radius: $ml-border-radius 0px 0px $ml-border-radius;
+        font-size: $ml-font-size-input;
+        float: left;
+        height: $ml-input-height;
+        outline: none;
+        padding: $ml-padding-search 0px $ml-padding-search $ml-padding-search;
+        position: relative;
+        width: calc(100% - #{$ml-wid-hei-lupa+$ml-padding-search});
+
+        &::placeholder {
+            color: $ml-place-holder-color;
+        }
+    }
+
+    button  {
+        background: url($ml-lupa-img) $ml-padd-left-top-lupa $ml-padd-left-top-lupa no-repeat;
+        background-color: $ml-back-color-body;
+        border: none;
+        border-radius: 0px $ml-border-radius $ml-border-radius 0px;
+        cursor: pointer;
+        display: inline;
+        float: left;
+        height: $ml-wid-hei-lupa;
+        position: relative;
+        width: $ml-wid-hei-lupa;
+    }
+}
+
+.ml-logo {
+    padding-right: $ml-margen-right-logo;
+}
