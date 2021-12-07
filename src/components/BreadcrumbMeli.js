@@ -8,9 +8,9 @@ export default function BreadcrumbMeli({ sCategories = ["S/Categorías"] }) {
                 sCategories?.map((category, index) => 
                     {
                         if (index !== sCategories?.length -1){
-                            return <span> { category } &gt;</span>
+                            return <span key={index}> { category } &gt;</span>
                         }else{
-                            return <span><strong> { category }</strong></span>
+                            return <span key={index}><strong> { category }</strong></span>
                         }
                     }
                 )

@@ -1,7 +1,8 @@
 import React from 'react'  
 import PropTypes from 'prop-types' 
 
-export default function DetailProductMeli ({sImgPath = "",  
+export default function DetailProductMeli ({sId = "",
+                                            sImgPath = "",  
                                             sImgDescript = "Alt Opcional",
                                             sSimbolMoney = "$",
                                             nPrice = 0,
@@ -30,7 +31,8 @@ export default function DetailProductMeli ({sImgPath = "",
     )
 }
 
-DetailProductMeli.propTypes = {  
+DetailProductMeli.propTypes = {
+    sId: PropTypes.string.isRequired,  
     sImgPath: PropTypes.string.isRequired,  
     sImgDescript: PropTypes.string,
     sSimbolMoney: PropTypes.string.isRequired,
