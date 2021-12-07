@@ -1,7 +1,7 @@
 import React from 'react'  
 import PropTypes from 'prop-types' 
 
-export default function BreadcrumbMeli({ sCategories = ["S/Categorías"] }) {
+export default function BreadcrumbMeli({ sCategories = [""] }) {
     return (
         <nav className="ml-breadcrumb">
             {

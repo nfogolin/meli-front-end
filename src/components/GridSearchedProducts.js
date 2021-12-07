@@ -24,5 +24,5 @@ export default function GridSearchedProducts({ searchResults = [] }) {
 }
 
 GridSearchedProducts.propTypes = {  
-    searchResults: PropTypes.array.isRequired
+    searchResults: PropTypes.array
 }
