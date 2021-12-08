@@ -1,7 +1,6 @@
 /* Hacemos la combinación de los reducers */
 
 
-
 import productsReducer from "./productsReducer";
 import { combineReducers } from 'redux'
 

@@ -29,6 +29,8 @@
     }
 
     .ml-prod-data-detail{
+        margin-left: auto;
+        max-width: 500px;
         & div:nth-of-type(1){
             color: #666666;
             font-size: 14px;
@@ -39,6 +41,7 @@
             font-size: 24px;
             font-weight: 600;
             margin-bottom: 32px;
+            max-width: calc();
         }
         & div:nth-of-type(3){
             color: #333333;
@@ -56,6 +59,8 @@
         .ml-prod-data-detail {
             text-align: center;
             width: 100%;
+            margin-left: none;
+            max-width: none;
             & div:nth-of-type(4){
                 button {
                    min-width: 100% !important;
@@ -84,6 +89,7 @@
 
     & div:nth-of-type(2){
         font-size: 16px;
+        color: #666666;
     }
 
     @media only screen and (max-width: 1200px){

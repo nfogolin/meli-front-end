@@ -1,5 +1,6 @@
 import React from 'react'  
 import PropTypes from 'prop-types' 
+import { Link } from 'react-router-dom'
 
 export default function DetailProductMeli ({sId = "",
                                             sImgPath = "",  
@@ -13,7 +14,7 @@ export default function DetailProductMeli ({sId = "",
         <div className="ml-detail-external-layer">
             <article className="ml-detail-row">
                 <figure className="ml-detail-image">
-                    <a href={`/items/${sId}`}><img src={sImgPath} alt={sImgDescript}/></a>
+                    { <Link to={`/items/${sId}`}><img src={sImgPath} alt={sImgDescript}/></Link> }
                 </figure>
                 <div className="ml-detail-prod">
                     <div className={`ml-detail-price ${(bShipping === true?'ml-shipping':'')}`}>
