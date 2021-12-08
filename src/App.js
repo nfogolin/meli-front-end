@@ -7,6 +7,7 @@ import HeaderMeli from "./components/HeaderMeli";
 import GridSearchedProducts from "./components/GridSearchedProducts";
 import BreadcrumbMeli from "./components/BreadcrumbMeli";
 import { useSelector } from "react-redux";
+import DetailDataProduct from "./components/DetailDataProduct";
 
 function App() {
 
@@ -19,12 +20,11 @@ function App() {
         <div className="ml-body">
           <BreadcrumbMeli sCategories = { searchResults?.categories } />
           <section className="ml-detail">  
-            
               <Routes>                
-                <Route path="/items" element = { <GridSearchedProducts searchResults = { searchResults?.items } /> } />
+                <Route path="/items" element = { <GridSearchedProducts /> } />
+                <Route path="/items/:id" element = { <DetailDataProduct /> } />
                 <Route path="/" element= {null} />
               </Routes>
-            
           </section>
       </div>
       </Router>

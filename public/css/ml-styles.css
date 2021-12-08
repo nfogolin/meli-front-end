@@ -21,7 +21,7 @@
     .ml-input input::placeholder {
       color: #eeeeee; }
   .ml-input button {
-    background: url("../../Assets/ic_Search.png") 10px 10px no-repeat;
+    background: url("../assets/ic_Search.png") 10px 10px no-repeat;
     background-color: #eeeeee;
     border: none;
     border-radius: 0px 2px 2px 0px;

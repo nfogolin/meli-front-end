@@ -13,10 +13,10 @@ export default function DetailProductMeli ({sId = "",
         <div className="ml-detail-external-layer">
             <article className="ml-detail-row">
                 <figure className="ml-detail-image">
-                    <img src={sImgPath} alt={sImgDescript}/>
+                    <a href={`/items/${sId}`}><img src={sImgPath} alt={sImgDescript}/></a>
                 </figure>
                 <div className="ml-detail-prod">
-                    <div className={`ml-detail-price ${(bShipping === 'true'?'ml-shipping':'')}`}>
+                    <div className={`ml-detail-price ${(bShipping === true?'ml-shipping':'')}`}>
                         {sSimbolMoney} {nPrice}
                     </div>
                     <div className="ml-detail-descript">
