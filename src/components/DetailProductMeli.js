@@ -2,6 +2,11 @@ import React from 'react'
 import PropTypes from 'prop-types' 
 import { Link } from 'react-router-dom'
 
+/*
+Componente que dibuja la fila con la información del producto: Recibe un grupo de props
+para realizarlo.
+*/
+
 export default function DetailProductMeli ({sId = "",
                                             sImgPath = "",  
                                             sImgDescript = "Alt Opcional",

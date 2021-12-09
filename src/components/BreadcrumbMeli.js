@@ -1,6 +1,10 @@
 import React from 'react'  
 import PropTypes from 'prop-types' 
 
+/*
+Ruta de "navegación" del/los productos buscados.
+*/
+
 export default function BreadcrumbMeli({ sCategories = [""] }) {
     return (
         <nav className="ml-breadcrumb">

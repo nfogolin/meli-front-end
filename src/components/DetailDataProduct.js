@@ -2,13 +2,17 @@ import React, { useEffect, useState } from 'react'
 import {useParams } from 'react-router-dom';
 import DataProduct from './DataProduct';
 
+/*
+Componente que recibe por url el Id del producto MELI para buscar su detalle en el servicio MELI.
+*/
+
 export default function DetailDataProduct() {
 
     const [product, setProduct] = useState([]);
     const { id } = useParams();
 
     useEffect(()=>{
-      fetch(`http://192.168.0.106:8085/api/items/${id}`, { 
+      fetch(`http://localhost:8085/api/items/${id}`, { 
         method: 'get', 
         headers: new Headers({ 
           'Content-Type': 'application/json'

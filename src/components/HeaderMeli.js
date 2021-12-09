@@ -2,6 +2,10 @@ import React from 'react'
 import { useForm } from '../hooks/useForm';
 import { useNavigate } from 'react-router-dom';
 
+/*
+Barra de busqueda MELI, al clickear hacer un redirect con React-Router al componente detalle.
+*/
+
 export default function HeaderMeli(){
 
     const navigate = useNavigate();

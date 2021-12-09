@@ -9,6 +9,10 @@ import BreadcrumbMeli from "./components/BreadcrumbMeli";
 import { useSelector } from "react-redux";
 import DetailDataProduct from "./components/DetailDataProduct";
 
+/*
+Estructura principal.
+*/
+
 function App() {
 
   const { searchResults } = useSelector(state => state.searchResults);

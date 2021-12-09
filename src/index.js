@@ -7,11 +7,16 @@ import allReducers from "./store/reducers";
 import { createStore, applyMiddleware, compose } from "redux";
 import thunk from 'redux-thunk';
 
+/*
+Utilizamos Redux para llevar la busqueda en un estado global y poder proveer datos tanto al detalle de 
+la busqueda como al componentes tipo breadcrumbs. También utilizamos thunk, una librería que está 
+preparada para gestionar actions de Redux como funciones asíncronas.
+*/
+
 const composeEnhancers = (typeof window !== 'undefined' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) || compose;
 
 const store = createStore(
   allReducers,
-  //((typeof window !== 'undefined')?window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__():f=>f)
   composeEnhancers (
     applyMiddleware (thunk)
   )
